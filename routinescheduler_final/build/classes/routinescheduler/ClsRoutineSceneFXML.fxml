@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: DarkViolet;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="routinescheduler.ClsRoutineSceneFXMLController">
+   <children>
+      <Button layoutX="396.0" layoutY="37.0" mnemonicParsing="false" onAction="#onAddNewRoutine" prefHeight="47.0" prefWidth="192.0" style="-fx-background-color: violet;" text="Add New Routine">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Button layoutX="396.0" layoutY="117.0" mnemonicParsing="false" onAction="#onRemoveRoutine" prefHeight="47.0" prefWidth="192.0" style="-fx-background-color: violet;" text="Remove Existing Routine">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <TableView fx:id="existingRoutine" onMousePressed="#onRowClicked" prefHeight="400.0" prefWidth="372.0">
+        <columns>
+          <TableColumn fx:id="order" prefWidth="59.0" text="Serial No." />
+          <TableColumn fx:id="datetime" prefWidth="310.0" text="Created Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
