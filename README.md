@@ -1,2 +1,4 @@
 # routine-scheduler_ff
-Routine Generator using JavaFX on basis of Genetic Algorithm
+Genetic Algorithm based class or task scheduling interface. 
+The interface has been designed using JavaFXML. 
+This is a data driven system which can be used by all the members of an educational systems.
